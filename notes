@@ -1,0 +1,28 @@
+ const { data: moviez} =FetchData("trending/all","week");
+
+
+
+
+
+
+<button className=" mt-5 text-2xl" 
+                 
+                  onClick={() =>isFavorite(singleMovieData.id) ? handleRemoveFromFavorites(singleMovieData.id)
+                  : handleAddToFavorites(singleMovieData)
+              }
+            >
+              {isFavorite(singleMovieData.id) ? <GoHeartFill/> : <GoHeart/>}
+            </button>
+
+
+
+
+const handleAddToFavorites = (singleMovieData) => {
+    dispatch(addToFavorites(singleMovieData));
+  };
+
+  const handleRemoveFromFavorites = (id) => {
+    dispatch(removeFromFavorites(id));
+  };
+  const isFavorite = (movieId) =>
+    favorites.some((fav) => fav.id === movieId);

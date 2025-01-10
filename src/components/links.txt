@@ -1,0 +1,17 @@
+https://api.themoviedb.org/3/discover/tv
+
+https://api.themoviedb.org/3/discover/movie
+
+https://api.themoviedb.org/3/trending/all/{time_window}
+
+
+<img src={`https://image.tmdb.org/t/p/w500+${castData.cast.profile_path}`}
+                                className='w-24 h-24 object-cover rounded-full'
+                              />
+
+
+                               
+
+  https://api.themoviedb.org/3/movie/{movie_id}/recommendations
+  
+https://api.themoviedb.org/3/movie/{movie_id}/similar
