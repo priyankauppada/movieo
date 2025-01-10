@@ -1,0 +1,1 @@
+import{r as e}from"./index-C8c4ezlC.js";const u=(s,a,f="")=>{const[o,r]=e.useState([]),t=`https://api.themoviedb.org/3/${s}/${a}?api_key=ae898899c4b983fa80f5dcf782a35aff`;return e.useEffect(()=>{async function c(){const n=await(await fetch(t)).json();r(n.results)}c()},[t]),{data:o}};export{u as F};
